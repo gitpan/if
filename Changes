@@ -4,4 +4,6 @@ Revision history for Perl extension if.
 
 0.010001	`our' removed for backward-compatibility.
 		test adopted for backward-compatibility
-.
+
+0.04		support package names which are simultaneously keywords (open).
+		fix `require or die'.
