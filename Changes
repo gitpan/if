@@ -7,3 +7,6 @@ Revision history for Perl extension if.
 
 0.04		support package names which are simultaneously keywords (open).
 		fix `require or die'.
+
+0.0401		test was using a discipline for open.pm not supported with
+		older versions of Perl.
