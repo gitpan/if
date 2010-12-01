@@ -37,5 +37,5 @@ ok( (not defined eval "use if ($v_plus > \$]), strict => 'refs'; \${'f'} = 12"
 
 # Old version had problems with the module name `open', which is a keyword too
 # Use 'open' =>, since pre-5.6.0 could interpret differently
-ok( eval "use if ($v_plus > \$]), 'open' => ':std'; 12" eq 12,
+ok( (eval "use if ($v_plus > \$]), 'open' => IN => ':crlf'; 12" || 0) eq 12,
     '"use if" with open');
